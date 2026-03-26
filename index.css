@@ -18,19 +18,20 @@
     margin: 0px;
     box-sizing: border-box;
     scrollbar-width: none;
-    /* scroll-behavior: smooth; */
 }
 
 body {
     background-color: black;
 }
 
+/* 1st box background running video */
 .box1 video {
     width: 100%;
     height: 900px;
     object-fit: cover;
 }
 
+/* top nav bar */
 .navbar {
     border: none;
     letter-spacing: 1.2px;
@@ -42,14 +43,15 @@ body {
     z-index: 1;
 }
 
+/* top rightside navbar contents over all div */
 .nav-item {
     position: relative;
 }
 
+/* top rightside navbar contents before background color */
 .nav-item::before {
     content: "";
     height: 100%;
-    /* bottom: 0; */
     left: 0;
     width: 0%;
     z-index: -1;
@@ -58,6 +60,7 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* top rightside navbar contents after background color */
 .nav-item::after {
     content: "";
     height: 100%;
@@ -71,16 +74,19 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* top rightside navbar contents before and after for background color */
 .nav-item:hover::before,
 .nav-item:hover::after {
     width: 50%;
 }
 
+/* top nav bar left side bike image */
 .nav-bike {
     width: 50px;
     height: 38px;
 }
 
+/* facebook, insta and youtube icons over all div */
 .icon-div {
     width: 100px;
     height: 50px;
@@ -88,24 +94,29 @@ body {
     left: 54px;
 }
 
+/* insta icon div */
 .icon-div1 {
     top: 350px;
 }
 
+/* facebook icon div */
 .icon-div2 {
     top: 426px;
 }
 
+/* youtube icon div */
 .icon-div3 {
     top: 502px;
 }
 
+/* facebook, insta and youtube image */
 .icon-image {
     width: 62px;
     height: 48px;
     margin-left: 12px;
 }
 
+/* facebook, insta and youtube images when click white background effect image*/
 .icon-circle {
     width: 62px;
     height: 48px;
@@ -115,10 +126,12 @@ body {
     transition: all 1s;
 }
 
+/* facebook, insta and youtube images when click */
 .icon-circle:hover {
     opacity: 1;
 }
 
+/* content text */
 .text {
     width: 896px;
     height: 185px;
@@ -136,7 +149,6 @@ body {
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    /* border: 1px solid blueviolet; */
 }
 
 @keyframes ball-jump-div {
@@ -258,36 +270,42 @@ body {
     }
 }
 
+/* 1st white color steps div */
 .step1 {
     width: 7.12px;
     height: 38.84px;
     background-color: white;
 }
 
+/* 2nd white color steps div */
 .step2 {
     width: 7.12px;
     height: 32.37px;
     background-color: white;
 }
 
+/* 3rd white color steps div */
 .step3 {
     width: 7.12px;
     height: 25.89px;
     background-color: white;
 }
 
+/* 4th white color steps div */
 .step4 {
     width: 7.12px;
     height: 19.42px;
     background-color: white;
 }
 
+/* 5th white color steps div */
 .step5 {
     width: 7.12px;
     height: 12.95px;
     background-color: white;
 }
 
+/* explore button */
 .button-div {
     width: 214px;
     height: 56px;
@@ -298,22 +316,27 @@ body {
     border: 1px solid white;
 }
 
+/* explore button background when active*/
 .button-div:active {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* explore text */
 .text2 {
     width: 92px;
 }
 
+/* explore button inside aarrow */
 .arrow {
     width: 25px;
 }
 
+/* 5 bike logos and names */
 .logo-overall-div {
     min-height: 270px;
 }
 
+/* each bike logos and names animation */
 .logo-div {
     min-width: 126px;
     height: 180px;
@@ -332,57 +355,67 @@ body {
     }
 }
 
+/* 1st bike logo */
 .bike-logo1 {
     width: 126px;
     height: 126px;
 }
 
+/* 1st bike names */
 .logo-name1 {
     width: 64px;
     height: 20px;
 }
 
+/* 2nd bike logo */
 .bike-logo2 {
     width: 190px;
     height: 120px;
     margin-bottom: 20px;
 }
 
+/* 2nd bike names */
 .logo-name2 {
     width: 55px;
     height: 18px;
 }
 
+/* 3rd bike logo */
 .bike-logo3 {
     width: 130px;
     height: 130px;
     top: -3px;
 }
 
+/* 3rd bike names */
 .logo-name3 {
     width: 110px;
     height: 20px;
     bottom: 0;
 }
 
+/* 4th bike logo */
 .bike-logo4 {
     width: 135px;
     height: 105px;
     top: 6px;
 }
 
+/* 4th bike names */
 .logo-name4 {
     width: 180px;
     height: 21px;
     bottom: 0;
 }
 
+/* 5th bike logo */
 .bike-logo5 {
     width: 150px;
     height: 120px;
     top: -10px;
 }
 
+/* 5th bike names */
 .logo-name5 {
     width: 90px;
     height: 20px;
@@ -392,6 +425,8 @@ body {
 
 
 /*box2*/
+
+/* overall row heading */
 .head h1 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -404,11 +439,12 @@ body {
     border-bottom: 2px solid white;
 }
 
+/* bike text overall div */
 .box2 .name {
     height: 152px;
-    /* background-color: blueviolet; */
 }
 
+/* bike text */
 .box2 .name h1 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
@@ -416,30 +452,37 @@ body {
     font-size: 120px;
 }
 
+/* B text */
 .box2 .name .letter1 {
     left: -80px;
 }
 
+/* I text */
 .box2 .name .letter2 {
     left: -40px;
 }
 
+/* K text */
 .box2 .name .letter3 {
     left: -76px;
 }
 
+/* E text */
 .box2 .name .letter4 {
     left: -76px;
 }
 
+/* S text */
 .box2 .name .letter5 {
     left: -75px;
 }
 
+/* each bike text div */
 .box2 .name .allletters {
     contain: paint;
 }
 
+/* each bike text div animation */
 .box2 .name .allletters .letter {
     animation: letters linear forwards;
     animation-timeline: view();
@@ -453,6 +496,7 @@ body {
     }
 }
 
+/* content div */
 .box2 .content h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -461,12 +505,14 @@ body {
     line-height: 38px;
 }
 
+/* viewmore button div*/
 .box2 .viewmore {
     width: 185px;
     height: 45px;
     margin-top: 66px;
 }
 
+/* viewmore button */
 .box2 .content button {
     width: 182px;
     height: 45px;
@@ -481,6 +527,7 @@ body {
     transition: 0.5s width, 0.5s height, 1s 0.2s opacity;
 }
 
+/* viewmore button hover*/
 .box2 .viewmore:hover button {
     width: 40px;
     height: 40px;
@@ -488,12 +535,14 @@ body {
     opacity: 0;
 }
 
+/* bike image */
 .box2 .bike-image {
     width: 580px;
     height: 570px;
     right: 30px;
 }
 
+/* viewmore button green color circle with loading effect */
 .box2 .circle {
     width: 46px;
     height: 45px;
@@ -515,10 +564,7 @@ body {
     opacity: 0;
 }
 
-.box2 .viewmore:hover+.circle {
-    animation-play-state: running;
-}
-
+/* viewmore button green color circle with loading effect animation*/
 @keyframes loading {
     0% {
         opacity: 1;
@@ -546,8 +592,16 @@ body {
     }
 }
 
+/* viewmore button green color circle with loading effect hover */
+.box2 .viewmore:hover+.circle {
+    animation-play-state: running;
+}
+
 
 /*box3*/
+/* scroll bike card design div */
+
+/* overall all cards div */
 .box3 .box-overalldiv {
     gap: 19px;
     width: 1430px;
@@ -556,14 +610,15 @@ body {
     overflow-x: scroll;
 }
 
+/* 1st bike card div */
 .box3 .box {
-    /* z-index: 0; */
     min-width: 300px;
     height: 385px;
     padding: 30px 0px;
     border-radius: 15px;
 }
 
+/* overall all cards div leftside arrow image active */
 .box3 .box-overalldiv:has(.arrow-right:active) .box {
     animation-name: slide-right;
     animation-duration: 10s;
@@ -583,6 +638,7 @@ body {
     }
 }
 
+/* overall all cards div rightside arrow image active */
 .box-overalldiv:has(.arrow-left:active) {
     animation-name: slide-left;
     animation-duration: 10s;
@@ -601,6 +657,7 @@ body {
     }
 }
 
+/* overall all cards div bike image */
 .bikes-image {
     width: 200px;
     height: 160px;
@@ -616,34 +673,41 @@ body {
     transform: scale(1.5) translateY(-36px);
 }
 
+/* wheel image */
 .wheel {
     width: 50px;
     height: 50px;
     bottom: 20px;
 }
 
+/* left side wheel image */
 .wheel-left {
     left: 40px;
 }
 
+/* right side wheel image */
 .wheel-right {
     right: 50px;
 }
 
+/* arrow image */
 .arrow {
     width: 30px;
     height: 36px;
     bottom: 25px;
 }
 
+/* right side arrow image */
 .arrow-right {
     left: 100px;
 }
 
+/* left side arrow image */
 .arrow-left {
     right: 110px;
 }
 
+/* each 2 cards middle small bike image with balck color background */
 .bike-icon-div {
     width: 95px;
     height: 70px;
@@ -654,12 +718,14 @@ body {
     background-color: black;
 }
 
+/* 9th card div right side small bike with black color background div */
 .d1 {
     right: unset;
     right: -260px;
     top: -241px;
 }
 
+/* 1st card div leftside small bike image with black color background div */
 .bike-icon-div1 {
     width: 55px;
     height: 70px;
@@ -671,17 +737,20 @@ body {
     background-color: black;
 }
 
+/* each 2 cards middle small bike image */
 .bike-icon {
     width: 58px;
     height: 42px;
 }
 
+/* 1st card div leftside small bike image */
 .bike-icon-div1 .bike-icon {
     width: 28px;
     height: 40px;
     margin-right: 13px;
 }
 
+/* last card div rightside small bike image div */
 .last-card .bike-icon-div {
     width: 55px;
     right: -252px;
@@ -690,12 +759,14 @@ body {
     border-bottom-left-radius: 50px;
 }
 
+/* last card div rightside small bike image */
 .last-card .bike-icon-div .bike-icon {
     width: 30px;
     height: 38px;
     margin-left: 5px;
 }
 
+/* MT text */
 .box3 .box h1 {
     font-size: 36px;
     font-family: "Poppins", sans-serif;
@@ -704,6 +775,7 @@ body {
     margin-top: 28px;
 }
 
+/* viewmore button */
 .box3 .box button {
     width: 135px;
     height: 38px;
@@ -717,12 +789,16 @@ body {
 }
 
 /*box4*/
+/* video and inside text */
+
+/* video */
 .box4 video {
     width: 100%;
     height: 780px;
     object-fit: cover;
 }
 
+/* 1st content heading */
 .box4 h1 {
     top: 210px;
     font-size: 60px;
@@ -731,6 +807,7 @@ body {
     font-style: normal;
 }
 
+/* 2nd content para */
 .box4 p {
     top: 320px;
     font-size: 30px;
@@ -741,6 +818,7 @@ body {
     font-style: normal;
 }
 
+/* explore model button */
 .box4 button {
     width: 195px;
     height: 50px;
@@ -755,6 +833,9 @@ body {
 }
 
 /*box5*/
+/* 3 card services div */
+
+/* 3 cards overall div */
 .box5 .boxes3 {
     gap: 18px;
     min-height: 950px;
@@ -762,6 +843,7 @@ body {
     contain: paint;
 }
 
+/* 1st card overall div */
 .box5 .box1 {
     width: 33%;
     height: 800px;
@@ -777,6 +859,7 @@ body {
     background: linear-gradient(to left, rgba(55, 152, 125, 0.5)), url("./half\ bike\ image.png") no-repeat center / contain;
 }
 
+/* 1st card overall div animation */
 @keyframes box-animation1 {
     0% {
         transform: translatey(-950px);
@@ -809,6 +892,7 @@ body {
     }
 }
 
+/* 2nd card overall div */
 .box5 .box2 {
     width: 33%;
     height: 800px;
@@ -824,6 +908,7 @@ body {
     background: linear-gradient(to left, rgba(55, 152, 125, 0.5)), url("./half\ bike\ image.png") no-repeat center / contain;
 }
 
+/* 2nd card overall div animation*/
 @keyframes box-animation2 {
     0% {
         transform: translatey(-950px);
@@ -856,6 +941,7 @@ body {
     }
 }
 
+/* 3rd card overall div */
 .box5 .box3 {
     width: 33%;
     height: 800px;
@@ -871,6 +957,7 @@ body {
     background: linear-gradient(to left, rgba(55, 152, 125, 0.5)), url("./half\ bike\ image.png") no-repeat center / contain;
 }
 
+/* 3rd card overall div animation */
 @keyframes box-animation3 {
     0% {
         transform: translatey(-950px);
@@ -903,6 +990,7 @@ body {
     }
 }
 
+/* 3 cards overall div heading */
 .box5 .boxes3 .box h1 {
     font-size: 40px;
     font-family: "Poppins", sans-serif;
@@ -912,6 +1000,7 @@ body {
     line-height: 62px;
 }
 
+/* 3 cards overall div para */
 .box5 .boxes3 .box p {
     font-size: 20px;
     font-family: "Poppins", sans-serif;
@@ -922,6 +1011,7 @@ body {
     padding: 0px 25px 0px 26px;
 }
 
+/* 3 cards bottom bike image */
 .box5 .box .bike-bottom {
     width: 390px;
     height: 340px;
@@ -934,16 +1024,20 @@ body {
 
 
 /*box6*/
+/* blog images and text */
 
+/* blog images and text overall div */
 .box6 {
     contain: paint;
     min-height: 1900px;
 }
 
+/* images and text overall div */
 .box6 .boxes {
     min-height: 1600px;
 }
 
+/* path like curved line image */
 .box6 .way {
     width: 878px;
     min-height: 1487px;
@@ -953,31 +1047,37 @@ body {
     left: 50px;
 }
 
+/* 1st blog images and text overall div */
 .box6 .box0 {
     min-height: 550px;
 }
 
+/* 1st blog images and text overall div */
 .box6 .box {
     top: 40px;
 }
 
+/* 2nd blog images and text overall div */
 .box6 .box1 {
     top: 590px;
     z-index: 1;
     min-height: 550px;
 }
 
+/* 3rd blog images and text overall div */
 .box6 .box2 {
     top: 1150px;
     z-index: 1;
     min-height: 550px;
 }
 
+/* 1st blog picture div */
 .box6 .box .blog {
     height: 550px;
     position: relative;
 }
 
+/* 1st blog picture */
 .box6 .box .blog1 {
     width: 665px;
     height: 600px;
@@ -992,6 +1092,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 1st blog picture animation */
 @keyframes image {
     from {
         left: -700px;
@@ -1002,6 +1103,7 @@ body {
     }
 }
 
+/* 2nd blog picture */
 .box6 .box .blog2 {
     width: 710px;
     height: 480px;
@@ -1016,6 +1118,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 2nd blog picture animation */
 @keyframes image1 {
     from {
         right: -740px;
@@ -1026,6 +1129,7 @@ body {
     }
 }
 
+/* 3rd blog picture */
 .box6 .box .blog3 {
     width: 650px;
     height: 550px;
@@ -1040,6 +1144,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 3rd blog picture animation */
 @keyframes image2 {
     from {
         left: -700px;
@@ -1050,18 +1155,21 @@ body {
     }
 }
 
+/* 1st blog mountain image */
 .box6 .box .mountain1 {
     width: 710px;
     height: 300px;
     margin-top: 10px;
 }
 
+/* 2nd blog mountain image */
 .box6 .box .mountain2 {
     width: 650px;
     height: 280px;
     margin-top: 35px;
 }
 
+/* 3rd blog mountain image */
 .box6 .box .mountain3 {
     width: 740px;
     height: 290px;
@@ -1069,6 +1177,7 @@ body {
 
 }
 
+/* over all 3 blogs mountain image side heading*/
 .box6 img+h1 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -1077,6 +1186,7 @@ body {
     font-size: 40px;
 }
 
+/* 1st blog mountain side heading */
 .box6 .mountain1+h1 {
     top: 170px;
     right: -550px;
@@ -1088,6 +1198,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 1st blog mountain side heading animation */
 @keyframes text1 {
     from {
         right: -550px;
@@ -1098,6 +1209,7 @@ body {
     }
 }
 
+/* 2nd blog mountain side heading */
 .box6 .mountain2+h1 {
     top: 136px;
     left: -460px;
@@ -1109,6 +1221,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 2nd blog mountain side heading animation */
 @keyframes text2 {
     from {
         left: -460px;
@@ -1119,7 +1232,7 @@ body {
     }
 }
 
-
+/* 3rd blog mountain side heading */
 .box6 .mountain3+h1 {
     top: 190px;
     right: -580px;
@@ -1131,6 +1244,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 3rd blog mountain side heading animation */
 @keyframes text3 {
     from {
         right: -580px;
@@ -1141,6 +1255,7 @@ body {
     }
 }
 
+/* over all 3 blogs mountain image side para */
 .box6 p {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -1150,6 +1265,7 @@ body {
     line-height: 30px;
 }
 
+/* 1st blog mountain side para */
 .box6 .para-div {
     width: 600px;
     height: 100px;
@@ -1163,7 +1279,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
-
+/* 1st blog mountain side para animation */
 @keyframes para {
     from {
         right: -650px;
@@ -1174,6 +1290,7 @@ body {
     }
 }
 
+/* 2nd blog mountain side para */
 .box6 .para-div1 {
     width: 640px;
     top: 214px;
@@ -1187,6 +1304,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 2nd blog mountain side para animation */
 @keyframes para1 {
     from {
         left: -650px;
@@ -1197,6 +1315,7 @@ body {
     }
 }
 
+/* 3rd blog mountain side para */
 .box6 .para-div2 {
     width: 620px;
     top: 250px;
@@ -1209,6 +1328,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 3rd blog mountain side para animation */
 @keyframes para2 {
     from {
         right: -640px;
@@ -1222,11 +1342,14 @@ body {
 
 
 /*box7*/
+/* arrow like structure bike images and year with content */
+
 .box7 {
     height: 500px;
-    margin-top: 170px;
+    margin-top: 150px !important;
 }
 
+/* straight line div */
 .box7 .line {
     width: 1158px;
     height: 2.6px;
@@ -1234,6 +1357,7 @@ body {
     background-color: white;
 }
 
+/* year below dot like circle */
 .box7 .circle {
     width: 17px;
     height: 17px;
@@ -1242,14 +1366,17 @@ body {
     background-color: white;
 }
 
+/* 1st year below dot like circle */
 .box7 .circle1 {
     left: 716px;
 }
 
+/* 2nd year below dot like circle */
 .box7 .circle2 {
     right: 301px;
 }
 
+/* 1 rectangle div small arrow like div */
 .box7 .rectangle1 {
     width: 39px;
     height: 37px;
@@ -1259,6 +1386,7 @@ body {
     background-color: white;
 }
 
+/* 2 rectangle div small arrow like div */
 .box7 .rectangle2 {
     width: 39px;
     height: 37px;
@@ -1268,6 +1396,7 @@ body {
     background-color: white;
 }
 
+/* big arrow like rectangle inside bike text */
 .box7 .box-rectangle1 {
     width: 162px;
     height: 176px;
@@ -1277,6 +1406,7 @@ body {
     background-color: white;
 }
 
+/* big arrow like rectangle inside bike each text */
 .box7 .box-rectangle1 h1 {
     font-family: "Jacques Francois Shadow", serif;
     font-weight: 400;
@@ -1285,26 +1415,31 @@ body {
     transform: skewX(-44deg);
 }
 
+/* big arrow like rectangle inside B text */
 .box7 .box-rectangle1 .h-l1 {
     left: 60px;
     top: 12px;
 }
 
+/* big arrow like rectangle inside I text */
 .box7 .box-rectangle1 .h-l2 {
     left: 72px;
     top: 50px;
 }
 
+/* big arrow like rectangle inside K text */
 .box7 .box-rectangle1 .h-l3 {
     left: 79px;
     top: 85px;
 }
 
+/* big arrow like rectangle inside E text */
 .box7 .box-rectangle1 .h-l4 {
     left: 86px;
     bottom: -3px;
 }
 
+/* bike image rectangle div */
 .box7 .box-rectangle2 {
     width: 240px;
     height: 245px;
@@ -1313,6 +1448,7 @@ body {
     transform: skewX(-45deg);
 }
 
+/* bike image rectangle div image */
 .box7 .box-rectangle2 img {
     width: 482px;
     height: 245px;
@@ -1321,6 +1457,7 @@ body {
     transform: skewX(45deg);
 }
 
+/* year below contents */
 .box7 .content {
     width: 400px;
     height: 125px;
@@ -1332,14 +1469,17 @@ body {
     color: white;
 }
 
+/* 1st year below content */
 .box7 .content1 {
     right: 455px;
 }
 
+/* 2nd year below content */
 .box7 .content2 {
     right: 52px;
 }
 
+/* year text */
 .box7 .year {
     font-family: "Inter",
         sans-serif;
@@ -1351,27 +1491,31 @@ body {
     font-size: 30px;
 }
 
+/* 1st year text */
 .box7 .year1 {
     right: 680px;
 }
 
+/*2nd  year text */
 .box7 .year2 {
     right: 275px;
 }
 
 
 /*box8*/
-
+/* bike images and texts div */
 .box8 {
     min-height: 1000px;
 }
 
+/* bike images and texts div gallery heading */
 .box8 .head {
     width: 300px;
     height: 60px;
     margin-bottom: 80px;
 }
 
+/* bike images and texts overall div */
 .box8 .gallery {
     width: 1345px;
     min-height: 1000px;
@@ -1379,6 +1523,7 @@ body {
     contain: paint;
 }
 
+/* 1st row 1st contents div */
 .box8 .gallery .boxes1 {
     width: 377px;
     height: 222.31px;
@@ -1393,6 +1538,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 1st row 1st contents div animation */
 @keyframes scroll1 {
     from {
         transform: translateX(-380px);
@@ -1403,11 +1549,13 @@ body {
     }
 }
 
+/* 1st row 2nd bike image div */
 .box8 .gallery .box1 {
     width: 310.83px;
     height: 222.31px;
 }
 
+/* overall content div 1st title */
 .box8 .gallery .titles h1 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -1417,11 +1565,13 @@ body {
     color: black;
 }
 
+/* 1st row content div title */
 .box8 .gallery .row1 h1 {
     top: 48px;
     left: 40px;
 }
 
+/* overall content div 1st para */
 .box8 .gallery .titles p {
     width: 285.56px;
     height: 90px;
@@ -1434,11 +1584,13 @@ body {
     color: black;
 }
 
+/* 1st row content div para */
 .box8 .gallery .row1 p {
     left: 25px;
     top: 95px;
 }
 
+/* overall content div half circle with inside number */
 .box8 .gallery .circles {
     z-index: 1;
     display: flex;
@@ -1446,6 +1598,7 @@ body {
     justify-content: center;
 }
 
+/* overall content div half circle inside number */
 .box8 .gallery .circles h1 {
     font-size: 46.51px;
     font-family: "Inter", sans-serif;
@@ -1455,6 +1608,7 @@ body {
     text-align: center;
 }
 
+/* some content div different half circle direction div */
 .box8 .c1 {
     width: 64.18px;
     height: 49.3px;
@@ -1463,10 +1617,12 @@ body {
     border-bottom-right-radius: 26px;
 }
 
+/* some content div different half circle direction inside number */
 .box8 .c1 h1 {
     margin-top: 10px;
 }
 
+/* 1st row 2nd bike image div */
 .box8 .photo-div1 {
     width: 670.65px;
     height: 222.31px;
@@ -1480,6 +1636,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 1st row 2nd bike image div animation */
 @keyframes scroll2 {
     from {
         transform: translateY(-250px);
@@ -1490,12 +1647,14 @@ body {
     }
 }
 
+/* 1st row 2nd bike image div image */
 .box8 .photo1 {
     width: 670.65px;
     height: 222.31px;
     left: 0;
 }
 
+/* 1st row 3rd contents div */
 .box8 .gallery .boxes2 {
     width: 320.39px;
     height: 288.25px;
@@ -1510,6 +1669,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 1st row 3rd contents div animation */
 @keyframes scroll3 {
     from {
         transform: translateX(350px);
@@ -1520,11 +1680,13 @@ body {
     }
 }
 
+/* 1st row 3rd overall content div inside content div */
 .box8 .gallery .box2 {
     width: 319px;
     height: 222.31px;
 }
 
+/* 1st row 3rd overall content div half circle div*/
 .box8 .gallery .c2 {
     width: 56.06px;
     height: 70.77px;
@@ -1533,11 +1695,13 @@ body {
     border-bottom-right-radius: 26px;
 }
 
+/* each row margin top */
 .box8 .gallery .row-margin {
     margin-top: 20px;
     gap: 20px;
 }
 
+/* 2nd row 1st bike image div image */
 .box8 .gallery .photo2 {
     width: 310px;
     height: 222.31px;
@@ -1551,6 +1715,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 2nd row 1st bike image div image animation */
 @keyframes scroll4 {
     from {
         transform: translateX(-350px);
@@ -1561,50 +1726,59 @@ body {
     }
 }
 
+/* 2nd row 2nd contents overall div */
 .box8 .gallery .boxes3 {
     width: 398.49px;
     height: 222.31px;
 }
 
+/* 2nd row 2nd contents div inside content div */
 .box8 .gallery .box3 {
     width: 329.32px;
     height: 222.31px;
 }
 
+/* 2nd row 3rd bike image div */
 .box8 .gallery .box4 {
     width: 322px;
     height: 222.31px;
     right: 339px;
 }
 
+/* 2nd row 3rd bike image div image */
 .box8 .gallery .photo3 {
     width: 322px;
     height: 222.31px;
     left: 0;
 }
 
+/* 2nd row contents div heading */
 .box8 .gallery .row2 h1 {
     left: 466px;
     top: 290px;
 }
 
+/* 2nd row contents div para */
 .box8 .gallery .row2 p {
     left: 360px;
     top: 336px;
 }
 
+/* 2nd row 4th bike image div */
 .box8 .gallery .box5 {
     width: 318px;
     height: 222.31px;
     right: 2px;
 }
 
+/* 2nd row 4th bike image div image */
 .box8 .gallery .photo4 {
     width: 318px;
     height: 222.31px;
     left: 0px;
 }
 
+/* 3rd row 1st content overall div */
 .box8 .gallery .boxes4 {
     width: 310.83px;
     height: 288.25px;
@@ -1618,6 +1792,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 3rd row 1st content overall div animation */
 @keyframes scroll5 {
     from {
         transform: translateX(-350px);
@@ -1628,6 +1803,7 @@ body {
     }
 }
 
+/* 3rd row 1st content div half circle div */
 .box8 .gallery .c3 {
     width: 56.06px;
     height: 70.77px;
@@ -1636,25 +1812,30 @@ body {
     border-top-right-radius: 26px;
 }
 
+/* 3rd row 1st content div half circle div inside number */
 .box8 .gallery .c3 h1 {
     margin-top: 10px;
 }
 
+/* 3rd row 1st content div */
 .box8 .gallery .box-6 {
     width: 310.83px;
     height: 222.31px;
 }
 
+/* 3rd row 1st content div heading */
 .box8 .gallery .box-6 h1 {
     top: 120px;
     right: 120px;
 }
 
+/* 3rd row 1st content div para */
 .box8 .gallery .box-6 p {
     top: 165px;
     right: 2px;
 }
 
+/* 3rd row 2nd bike image div */
 .box8 .gallery .box-7 {
     width: 330px;
     height: 467px;
@@ -1668,6 +1849,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 3rd row 2nd bike image div animation */
 @keyframes scroll6 {
     from {
         transform: translateY(530px);
@@ -1678,24 +1860,28 @@ body {
     }
 }
 
+/* 3rd row 2nd bike image div image */
 .box8 .gallery .photo5 {
     width: 330px;
     height: 467px;
     left: 0px;
 }
 
+/* 3rd row 3rd bike image div */
 .box8 .gallery .box-8 {
     width: 322px;
     height: 222.31px;
     right: 340px;
 }
 
+/* 3rd row 3rd bike image div image */
 .box8 .gallery .photo6 {
     width: 322px;
     height: 222.31px;
     left: 0px;
 }
 
+/* 3rd row 4th content overall div */
 .box8 .gallery .boxes5 {
     width: 406px;
     height: 222.31px;
@@ -1709,6 +1895,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 3rd row 4th content overall div animation */
 @keyframes scroll7 {
     from {
         transform: translateX(430px);
@@ -1719,6 +1906,7 @@ body {
     }
 }
 
+/* 3rd row 4th content div half circle */
 .box8 .gallery .c4 {
     width: 84px;
     height: 49.3px;
@@ -1727,22 +1915,26 @@ body {
     border-bottom-left-radius: 26px;
 }
 
+/* 3rd row 4th content div */
 .box8 .gallery .box-9 {
     width: 320px;
     height: 222.31px;
     right: 2px;
 }
 
+/* 3rd row 4th content div heading */
 .box8 .gallery .box-9 h1 {
     top: 45px;
     right: 90px;
 }
 
+/* 3rd row 4th content div para */
 .box8 .gallery .box-9 p {
     top: 95px;
     right: 2px;
 }
 
+/* 4th row 1st content overall div */
 .box8 .row4 .boxes6 {
     width: 377px;
     height: 222.31px;
@@ -1756,6 +1948,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 4th row 1st content overall div animation */
 @keyframes scroll8 {
     from {
         transform: translateX(-380px);
@@ -1766,25 +1959,29 @@ body {
     }
 }
 
+/* 4th row 1st content div heading */
 .box8 .row4 .boxes6 h1 {
     top: 45px;
     left: 90px;
 }
 
+/* 4th row 1st content div para */
 .box8 .row4 .boxes6 p {
     top: 90px;
     right: 2px;
 }
 
+/* 4th row 1st content div*/
 .box8 .row4 .boxes6 .box1 {
     left: 0px;
 }
 
+/* 4th row 1st content div half circle */
 .box8 .row4 .boxes6 .c1 {
     right: 2px;
 }
 
-
+/* 4th row 2nd content overall div */
 .box8 .row4 .boxes7 {
     width: 386px;
     top: 730px;
@@ -1799,6 +1996,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 4th row 2nd content overall div animation */
 @keyframes scroll9 {
     from {
         transform: translateY(400px);
@@ -1809,25 +2007,30 @@ body {
     }
 }
 
+/* 4th row 2nd content div heading */
 .box8 .row4 .boxes7 h1 {
     top: 45px;
     left: 60px;
 }
 
+/* 4th row 2nd content div para */
 .box8 .row4 .boxes7 p {
     top: 90px;
     right: 2px;
 }
 
+/* 4th row 2nd content div */
 .box8 .row4 .boxes7 .box1 {
     width: 321px;
     left: 0px;
 }
 
+/* 4th row 2nd content div half circle div */
 .box8 .row4 .boxes7 .c1 {
     right: 2px;
 }
 
+/* 4th row 3rd bike image div */
 .box8 .row4 .box-10 {
     width: 320px;
     height: 222.31px;
@@ -1842,6 +2045,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 4th row 3rd bike image div animation */
 @keyframes scroll10 {
     from {
         transform: translateX(350px);
@@ -1852,6 +2056,7 @@ body {
     }
 }
 
+/* 4th row 3rd bike image div image */
 .box8 .row4 .box-10 .photo7 {
     width: 320px;
     height: 222.31px;
@@ -1862,19 +2067,25 @@ body {
 
 
 /*box9*/
+/* feedback */
+
+/* terminal heading */
 .box9 .head {
     width: 330px;
 }
 
+/* feedback div overall div */
 .box9 .comments-div {
     height: 700px;
 }
 
+/* each person feedback div overall div */
 .box9 .whole-div {
     width: 800px !important;
     gap: 24px;
 }
 
+/* 1st person feedback profile image */
 .box9 .profile {
     width: 160px;
     height: 160px;
@@ -1882,6 +2093,7 @@ body {
     border-radius: 50%;
 }
 
+/* overall persons name */
 .box9 .whole-div h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -1890,18 +2102,21 @@ body {
     margin-top: 30px;
 }
 
+/* overall feedback content start " */
 .box9 .whole-div .colon1 {
     width: 30px;
     height: 20px;
     transform: translateX(-220px);
 }
 
+/* overall feedback content end " */
 .box9 .whole-div .colon2 {
     width: 30px;
     height: 20px;
     transform: translateX(-43px) translateY(-10px);
 }
 
+/* overall feedback contents */
 .box9 .whole-div p {
     width: 410px;
     height: 130px;
@@ -1911,22 +2126,26 @@ body {
     font-size: 20px;
 }
 
+/* overall feedback star images */
 .box9 .whole-div .star {
     width: 36.84px;
     height: 32.88px;
 }
 
+/* each feedback card */
 .box9 .cards {
     width: 480px !important;
     height: 635px !important;
 }
 
+/* 2nd person feedback overall div */
 .box9 .card-overall-div2 {
     width: 76px;
     height: 553px;
     transition: all 0.5s;
 }
 
+/* 2nd person feedback card */
 .box9 .div1 {
     width: 38.67px;
     height: 281.4px;
@@ -1941,6 +2160,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 2nd person feedback card animation */
 @keyframes comment2 {
     from {
         width: 38.67px;
@@ -1957,6 +2177,7 @@ body {
     }
 }
 
+/* 2nd person feedback card leftside border*/
 .box9 .card-overall-div2 .s-border {
     width: 10px;
     height: 100%;
@@ -1965,6 +2186,7 @@ body {
     transform: translateX(-1px);
 }
 
+/* 2nd person feedback card active */
 .box9 .card-overall-div2:active {
     width: 500px !important;
     height: 635px !important;
@@ -1972,27 +2194,33 @@ body {
     display: flex;
 }
 
+/* 2nd person feedback card active */
 .box9:has(.div1:active) .div {
     display: none !important;
 }
 
+/* 2nd person feedback card active */
 .box9 .card-overall-div2:active .s-border {
     width: 18px;
 }
 
+/* 2nd person feedback card name */
 .box9 .name1 {
     font-size: 30px !important;
     transform: rotateZ(-90deg) translatex(325px) translateY(5px);
 }
 
+/* 2nd person feedback overall div name */
 .box9 .card-overall-div2:active .name1 {
     display: none;
 }
 
+/* 2nd person feedback card */
 .box9 .card-overall-div2 .card2 {
     display: none !important;
 }
 
+/* 2nd person feedback card active */
 .box9 .card-overall-div2:active .card2 {
     display: unset !important;
     display: flex !important;
@@ -2001,9 +2229,8 @@ body {
     justify-content: center !important;
 }
 
+/* 2nd person feedback overall div */
 .box9 .div {
-    /* width: 85px;
-    height: 635px; */
     width: 38.67px;
     height: 281.4px;
     animation-name: comment1;
@@ -2016,6 +2243,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 2nd person feedback overall div animation */
 @keyframes comment1 {
     from {
         width: 38.67px;
@@ -2032,6 +2260,7 @@ body {
     }
 }
 
+/* 3rd person feedback card leftside border*/
 .box9 .div .s-border {
     width: 13px;
     height: 100%;
@@ -2040,13 +2269,13 @@ body {
     transform: translateX(-1px);
 }
 
+/* 3rd person feedback card overall div name*/
 .box9 .div .name1 {
     transform: rotateZ(-90deg) translatex(365px) translateY(5px);
 }
 
+/* 3rd person feedback card */
 .box9 .div2 {
-    /* width: 62.39px;
-    height: 453.97px; */
     width: 38.67px;
     height: 281.4px;
     animation-name: comment3;
@@ -2060,7 +2289,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
-
+/* 3rd person feedback card animation */
 @keyframes comment3 {
     from {
         width: 38.67px;
@@ -2077,6 +2306,7 @@ body {
     }
 }
 
+/* 4th person feedback card leftside border*/
 .box9 .div2 .s-border {
     width: 8px;
     height: 100%;
@@ -2085,19 +2315,23 @@ body {
     transform: translateX(-1px);
 }
 
+/* 4th person feedback overall div name */
 .box9 .div2 .name1 {
     font-size: 24px !important;
     transform: rotateZ(-90deg) translatex(270px) translateY(5px);
 }
 
+/* 4th person feedback card active */
 .box9:has(.div2:active) .div {
     display: none !important;
 }
 
+/* 4th person feedback card active */
 .box9:has(.div2:active) .div1 {
     display: none !important;
 }
 
+/* 4th person feedback overall div */
 .box9 .div3 {
     width: 38.67px;
     height: 281.4px;
@@ -2112,6 +2346,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 4th person feedback overall div animation */
 @keyframes comment4 {
     from {
         width: 38.67px;
@@ -2128,6 +2363,7 @@ body {
     }
 }
 
+/* 4th person feedback card leftside border */
 .box9 .div3 .s-border {
     width: 6.45px;
     height: 100%;
@@ -2136,23 +2372,28 @@ body {
     transform: translateX(-1px);
 }
 
+/* 4th person feedback overall div name */
 .box9 .div3 .name1 {
     font-size: 22px !important;
     transform: rotateZ(-90deg) translatex(215px) translateY(5px);
 }
 
+/* 4th person feedback card active */
 .box9:has(.div3:active) .div {
     display: none !important;
 }
 
+/* 4th person feedback card active */
 .box9:has(.div3:active) .div1 {
     display: none !important;
 }
 
+/* 4th person feedback card active */
 .box9:has(.div3:active) .div2 {
     display: none !important;
 }
 
+/* 5th person feedback overall div */
 .box9 .div4 {
     width: 38.67px;
     height: 281.4px;
@@ -2167,6 +2408,7 @@ body {
     animation-range: entry 100px cover 40%;
 }
 
+/* 5th person feedback overall div animation */
 @keyframes comment5 {
     from {
         width: 26.67px;
@@ -2183,6 +2425,7 @@ body {
     }
 }
 
+/* 5th person feedback card leftside border */
 .box9 .div4 .s-border {
     width: 5.09px;
     height: 100%;
@@ -2191,23 +2434,28 @@ body {
     transform: translateX(-1px);
 }
 
+/* 5th person feedback overall div name */
 .box9 .div4 .name1 {
     font-size: 18px !important;
     transform: rotateZ(-90deg) translatex(170px) translateY(5px);
 }
 
+/* 5th person feedback card active */
 .box9:has(.div4:active) .div {
     display: none !important;
 }
 
+/* 5th person feedback card active */
 .box9:has(.div4:active) .div1 {
     display: none !important;
 }
 
+/* 5th person feedback card active */
 .box9:has(.div4:active) .div2 {
     display: none !important;
 }
 
+/* 5th person feedback card active */
 .box9:has(.div4:active) .div3 {
     display: none !important;
 }
@@ -2215,27 +2463,32 @@ body {
 
 
 /*box10*/
+/* last footer overall div */
 
 .box10 {
     min-height: 700px;
     overflow-x: hidden;
 }
 
+/* last row contents overall div */
 .box10 .last-row {
     z-index: 2;
 }
 
+/* content div title */
 .box10 .last-row h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
+/* 1st content div title */
 .box10 .last-row .box-1 h1 {
     font-size: 60px;
     margin-bottom: 25px;
 }
 
+/* 1st content div para */
 .box10 .last-row .box-1 p {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -2243,6 +2496,7 @@ body {
     font-size: 26px;
 }
 
+/* navbar content div title */
 .box10 .last-row .box-2 h1 {
     font-size: 30px;
     margin-bottom: 26px;
@@ -2250,6 +2504,7 @@ body {
     margin-top: 15px;
 }
 
+/* navbar content div para */
 .box10 .last-row .box p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -2257,10 +2512,12 @@ body {
     font-size: 22px;
 }
 
+/* navbar content div */
 .box10 .last-row .box-2 p {
     margin-left: 40px;
 }
 
+/* address div title */
 .box10 .last-row .box-3 h1 {
     font-size: 30px;
     margin-top: 15px;
@@ -2268,10 +2525,12 @@ body {
     margin-left: 16px;
 }
 
+/* address div para */
 .box10 .last-row .box-3 p {
     margin-left: 16px;
 }
 
+/* footer overall div background bike image */
 .box10 .last-row img {
     width: 700px;
     height: 576px;
@@ -2280,6 +2539,7 @@ body {
     opacity: 27%;
 }
 
+/* last circle blink effect div */
 .box10 .arrow-top {
     width: 44px;
     height: 44px;
@@ -2293,6 +2553,7 @@ body {
     animation-iteration-count: infinite;
 }
 
+/* last circle blink effect div animation */
 @keyframes scroll-top {
     0% {
         box-shadow: none;
@@ -2321,6 +2582,7 @@ body {
     }
 }
 
+/* last circle blink effect div inside click to move top */
 .box10 a {
     width: 44px;
     height: 44px;
@@ -2332,51 +2594,12 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* responsive */
 
 
 @media only screen and (min-width:300px) and (max-width:600px) {
     .over-all-div {
         padding: 10px !important;
-        /* overflow: hidden; */
         contain: paint;
     }
 
